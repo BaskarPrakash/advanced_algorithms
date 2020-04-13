@@ -300,6 +300,7 @@ int main() {
     std::cout << "d: " << key.decrypt_power << std::endl;
     
     unsigned int data = 1337;
+    std::cout << "Enter Message as integer [0 to 4294967295] :" ; 
     std::cin >> data;
     InfInt edata;
     edata = Security::RSA_Encrypt_Data(data, pkey);
