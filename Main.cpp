@@ -38,7 +38,7 @@ namespace Security {
         gen_key.prime_1 = Generate_Random_Prime();
         gen_key.prime_2 = Generate_Random_Prime();
         gen_key.mod = gen_key.prime_1 * gen_key.prime_2;
-        std::cout << "HERE\n";
+        //std::cout << "HERE\n";
         InfInt tmp = random_number() % ((gen_key.prime_1 - 1)*(gen_key.prime_2 - 1) - MIN_RANDOM_NUMBER) + MIN_RANDOM_NUMBER;
         while (euclidean_gcd(tmp, (gen_key.prime_1 - 1)*(gen_key.prime_2 - 1)) != 1) {
             tmp = random_number() % ((gen_key.prime_1 - 1)*(gen_key.prime_2 - 1) - MIN_RANDOM_NUMBER) + MIN_RANDOM_NUMBER;
@@ -290,7 +290,7 @@ namespace Security {
 
 int main() {
     srand(time(NULL));
-    std::cout << "HERE\n";
+    //std::cout << "HERE\n";
     Security::RSA_Private_Key key = Security::Generate_RSA_Private_Key();
     Security::RSA_Public_Key pkey = Security::Generate_RSA_Public_Key(key);
     std::cout << "p: " << key.prime_1 << std::endl;
