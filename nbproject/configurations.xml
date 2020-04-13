@@ -4,6 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>Inflnt.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -12,7 +13,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>RSA_Ecrpt_Dcrpt.cpp</itemPath>
+      <itemPath>Main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -35,8 +36,17 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <cTool>
+          <incDir>
+            <pElem>/lib64</pElem>
+            <pElem>/lib</pElem>
+            <pElem>/usr/lib</pElem>
+          </incDir>
+        </cTool>
       </compileType>
-      <item path="RSA_Ecrpt_Dcrpt.cpp" ex="false" tool="1" flavor2="0">
+      <item path="Inflnt.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -59,7 +69,9 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="RSA_Ecrpt_Dcrpt.cpp" ex="false" tool="1" flavor2="0">
+      <item path="Inflnt.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>
